@@ -4,5 +4,47 @@
   max-width: 1500px;
   margin: 0 auto;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container_page {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  height: 100%;
+}
+
+.container_cycle {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0.3em;
+
+  .cycle {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin: 1em 0;
+    .cycle__title {
+      font-size: 1.2em;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .cycle__time {
+      font-size: 1.2em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+  }
 }

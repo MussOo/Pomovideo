@@ -1,0 +1,127 @@
+.container {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease-in-out;
+}
+
+.container_settings {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  width: 60vw;
+  height: 60vh;
+  border-radius: 10px;
+  padding: 20px;
+
+  .container_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    .container_title {
+      font-size: 30px;
+      font-weight: 600;
+    }
+    .container_close {
+      font-size: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+
+  .container_cycle {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    .label_btn_cycle {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .container_btn_cycle {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+    .btn_cycle_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px 0 rgba(184, 51, 51, 0.2);
+      border: 0;
+      margin-bottom: 10px;
+      width: 80px;
+      cursor: pointer;
+      justify-content: center;
+      &:hover {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+        /* zoom: 1.1; */
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .container_worktime {
+  }
+  .container_break {
+  }
+
+  .Cycle_input {
+  }
+  .container_timer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 1em;
+    justify-content: space-between;
+    .container_items_timer {
+      display: flex;
+      justify-content: space-between;
+
+      .item_timer {
+        display: flex;
+        width: 30%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+        padding: 10px;
+        border-radius: 5px;
+        .item_timer_title {
+          font-size: 15px;
+          font-weight: 400;
+        }
+
+        &:hover {
+          box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+          /* zoom: 1.1; */
+
+          transform: scale(1.1);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.close {
+  display: none;
+}

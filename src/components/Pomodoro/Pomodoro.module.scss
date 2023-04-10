@@ -1,0 +1,97 @@
+.pomodoro_container {
+  width: 70%;
+  margin: 0 auto;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .pomodoro_timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 1em 0;
+    .pomodoro_timer__title {
+      font-size: 2em;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .pomodoro_timer__time {
+      font-size: 10em;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+    }
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+    margin: 1em 0;
+
+    .start {
+      background-color: #00b894;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-size: 2em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+      &:hover {
+        background-color: #00cec9;
+        transform: scale(1.1);
+      }
+      &:disabled {
+        background-color: #929292;
+        color: #dfe6e9;
+        cursor: not-allowed;
+      }
+    }
+    .stop {
+      background-color: #d63031;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-size: 2em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+      &:hover {
+        background-color: #e17055;
+        transform: scale(1.1);
+      }
+      &:disabled {
+        background-color: #929292;
+        color: #dfe6e9;
+        cursor: not-allowed;
+      }
+    }
+
+    .reset {
+      background-color: #0984e3;
+      color: white;
+      border: none;
+      padding: 0.5em 1em;
+      border-radius: 5px;
+      font-size: 2em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+      &:hover {
+        background-color: #74b9ff;
+        transform: scale(1.1);
+      }
+      &:disabled {
+        background-color: #929292;
+        color: #dfe6e9;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
